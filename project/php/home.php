@@ -1,0 +1,46 @@
+<?php
+	session_start();
+	if($_SESSION['sid']!=session_id())
+	{
+		header("location:../index.html");
+	}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>We Help You</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="container-fluid" style="margin:0px auto;">
+		<div class="jumbotron" align="center" style="background-color:skyblue;">
+			<h1>We Help You</h1> 
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">We Help You :)</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="login.html">LogIn</a></li>
+					<li><a href="help.html">Help</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+							<li><a href="registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
